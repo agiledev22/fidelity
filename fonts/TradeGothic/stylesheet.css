@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'TradeGothicBold2';
+	src: url('TRADGB.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothic';
+	src: url('TRADG.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicItalic';
+	src: url('TRADG.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicBold';
+	src: url('TRADGBT.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicLight';
+	src: url('TRADGL.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicLightItalic';
+	src: url('TRADGLOO.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicCond';
+	src: url('TRADGCE.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicCondItalic';
+	src: url('TRADGCEOO.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicBoldCond';
+	src: url('TRADGBCT.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TradeGothicBoldCondItalic';
+	src: url('TRADGBCTO.ttf') format('truetype');
+}

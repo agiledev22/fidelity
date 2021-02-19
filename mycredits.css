@@ -1,0 +1,1644 @@
+/*  Form Container  */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#fidelityadminhome .historyvaluerow .datevalue{
+    width: 48.5%;
+}
+#fidelityadminhome .historyvaluerow .cardidvalue{
+    width: 29.5%;
+}
+#fidelityadminhome .historyvaluerow .amountvaluebox {
+    width: 21%;
+}
+
+#fidelityadminclient .historytitlebox .dateboxtitle{
+    width:45%;
+}
+#fidelityadminclient .historytitlebox .cardidboxtitle{
+    width:25.5%;
+}
+#fidelityadminclient .historytitlebox .amountboxtitle{
+    width:27%;
+}
+
+#fidelityclient .historyvaluerow .datevalue{
+    width: 65.5%;
+}
+#fidelityclient .historyvaluerow .cardidvalue{
+    width: 39.5%;
+}
+#fidelityclient .historyvaluerow .valuestatusbox{
+    width: 13%;
+}
+#fidelityclient .historyvaluerow .amountvalue{
+    width: 17%;
+}
+
+.fidelitycontainer {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+        -45deg, 
+        #e9eced,
+        #e9eced 17px,
+        #f3f4f5 17px,
+        #f3f4f5 34px
+        );
+        overflow: scroll;
+}
+.mastheadcontainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 42%;
+}
+.mastheadfidelity {
+    width: 434px;
+    height: 218px;
+    margin-top: -9px;
+}
+.appcontainerborder {
+    width: 520px;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 12px;
+    border: solid 12px #f3f4f5;
+    background-color: #f3f4f5;
+    margin-bottom: 40px;
+    margin-top: -9px;
+}
+.appcontainer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 12px;
+    background-color: #a41b40;
+}
+.titlecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    height: 82px;
+    width: 85%;
+    font-family: "BotonBold";
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.titlecontainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 8px;
+    height: 82px;
+    width: 100%;
+    font-family: "BotonBold";
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 4px dotted #ffffff;
+}
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 85%;
+    border-top: 4px dotted #ffffff;
+    border-bottom: 4px dotted #ffffff;
+}
+.titlestyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    font-family: "BotonBold";
+    font-size: 26px;
+    color: #ffffff;
+    letter-spacing: 0.6px;
+    text-align: center;
+    line-height: 1.3;
+}
+.subtitlecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    font-family: "TradeGothic";
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0.6px;
+    text-align: center;
+    line-height: 1.3;
+}
+.retrivepassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    font-family: "TradeGothicBold";
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.retrivepassword:hover {
+    text-decoration: underline;
+}
+.inputboxlogin {
+    width: 300px;
+    height: 40px;
+    border: none;
+    font-family: "TradeGothic";
+    letter-spacing: 0.4px;
+    color: #2d2d2d;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+.marginbottom {
+    margin-bottom: 32px;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+    width: 100%;
+}
+.onebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 300px;
+    border: 4px solid #ffffff;
+    font-family: "TradeGothicBold";
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.onebutton:hover {
+    background-color: #2d2d2d;
+}
+.twobutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 160px;
+    border: 4px solid #ffffff;
+    font-family: "TradeGothicBold";
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 12px;
+}
+.twobutton:hover {
+    background-color: #2d2d2d;
+}
+.green:hover {
+    background-color: #6dbe45;
+}
+.usercontainer {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+}
+.usercontainer1 {
+    width: 75%;
+    height: 100%;
+}
+.accountcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 70px;
+    border-left: 4px dotted #ffffff;
+    margin-top: -8px;
+}
+.usertitle {
+    float: left;
+    font-family: "TradeGothicBold";
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 8px;
+    width: 95%;
+    border-bottom: 1px dotted #ffffff;
+    padding-bottom: 4px;
+}
+.useraddress {
+    display: flex;
+    align-items: center;    
+    height: 56px;
+    font-family: "BotonMedium";
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    width: 100%;
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.accounticon {
+    background-image: url(images/accounticon.svg);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.accounticon:hover {
+    opacity: 0.8;
+}
+.statscontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 89px;
+    border-bottom: 4px dotted #ffffff;
+}
+.statsbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.dividerline {
+    height: 76px;
+    border-left: 4px dotted #ffffff;
+}
+.statstitle {
+    font-family: "TradeGothicBold";
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.statsvalue {
+    display: flex;
+    align-items: center;    
+    height: 52px;
+    font-family: "TradeGothicBold";
+    color: #ffffff;
+    font-size: 36px;
+    text-align: left;
+}
+.cardidcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 89px;
+    border-bottom: 4px dotted #ffffff;
+}
+.searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 79px;
+    background-color: #888888;
+    font-family: "TradeGothicBold";
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.searchbox:hover {
+    background-color: #999999;
+}
+.inputbox {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 79px;
+    font-family: "TradeGothicBold";
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 0px;
+}
+.createbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 79px;
+    background-color: #6dbe45;
+    font-family: "TradeGothicBold";
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.createbox:hover {
+    background-color: #66b340;
+}
+.inputnumbers {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-family: "TradeGothicBold";
+    color: #2d2d2d;
+    font-size: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+.plusminusbox {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 79px;
+}
+.plusbutton {
+    background-image: url(images/plusbutton.svg);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.plusbutton:hover {
+    background-image: url(images/plusbuttonover.svg);
+}
+.minusbutton {
+    background-image: url(images/minusbutton.svg);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.minusbutton:hover {
+    background-image: url(images/minusbuttonover.svg);
+}
+.buybox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 79px;
+    background-color: #00b7cf;
+    font-family: "TradeGothicBold";
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.buybox:hover {
+    background-color: #00a2b8;
+}
+.accountid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: "BotonBold";
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
+.creditstatuscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 189px;
+    border-bottom: 4px dotted #ffffff;
+}
+.clientstatusbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 79px;
+    background-color: #ffffff;
+}
+.clientstatusvaluebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 57px;
+}
+.borderright {
+    border-right: 2px dotted #2d2d2d;
+}
+.clientstatusvalueiconup {
+    background-image: url(images/uptrend.svg);
+    height: 28px;
+    width: 28px;
+}
+.clientstatusvalueicondown {
+    background-image: url(images/downtrend.svg);
+    height: 28px;
+    width: 28px;
+}
+.clientstatusvalue {
+    font-family: "TradeGothicBold";
+    color: #2d2d2d;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 6px;
+}
+.clientscreditvaluestatic {
+    font-family: "TradeGothic";
+    color: #2d2d2d;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.clientscreditvalue {
+    font-family: "TradeGothic";
+    color: #2d2d2d;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+.historycontainer {
+    width: 100%;
+    height: 382px;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    overflow-y: scroll;
+}
+.historytitlebox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #2d2d2d;
+    margin-top: 4px;
+}
+.dateboxtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47%;
+    height: 22px;
+    font-family: "TradeGothicBold";
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 2px dotted #ffffff;
+}
+.cardidboxtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+    height: 22px;
+    font-family: "TradeGothicBold";
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 2px dotted #ffffff;
+}
+.amountboxtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27%;
+    height: 21px;
+    font-family: "TradeGothicBold";
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.historyvaluerow {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 93.5%;
+    height: 46px;
+    border-bottom: 2px dotted #2d2d2d;
+}
+.historyvaluerow:hover{
+    color: #fff;
+    background-color: #00b3db;
+    cursor: pointer;
+}
+
+.historycontainer .highlighted{
+    color: #fff;
+    background-color: #00b3db;
+}
+
+.datevalue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46.5%;
+    height: 30px;
+    font-family: "TradeGothic";
+    letter-spacing: 2px;
+    /*color: #2d2d2d;*/
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 2px dotted #2d2d2d;
+}
+.cardidvalue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28.5%;
+    height: 30px;
+    font-family: "TradeGothic";
+    letter-spacing: 2px;
+    /*color: #2d2d2d;*/
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 2px dotted #2d2d2d;
+}
+.amountvaluebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 22px;
+    font-family: "TradeGothic";
+    letter-spacing: 2px;
+    /*color: #2d2d2d;*/
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.valuestatusbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 22px;
+    border-right: 2px dotted #2d2d2d;
+}
+.amountvalue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+    font-family: "TradeGothic";
+    letter-spacing: 2px;
+    /*color: #2d2d2d;*/
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.amountstatusplus {
+    background-image: url(images/valueplus.svg);
+    height: 18px;
+    width: 18px;
+}
+.amountstatusnew {
+    background-image: url(images/valuenew.svg);
+    height: 18px;
+    width: 18px;
+}
+.amountstatusminus {
+    background-image: url(images/valueminus.svg);
+    height: 18px;
+    width: 18px;
+}
+.amountstatusbuy {
+    background-image: url(images/valuebuy.svg);
+    height: 18px;
+    width: 18px;
+}
+.inputboxaccount {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-family: "TradeGothic";
+    letter-spacing: 0.6px;
+    color: #2d2d2d;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 32px;
+}    
+.capitalize {
+    text-transform: capitalize;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+color:    #2d2d2d;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #2d2d2d;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #2d2d2d;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #2d2d2d;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #2d2d2d;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #2d2d2d;
+}
+.deleteaccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    border: none;
+    font-family: "TradeGothicBold";
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    background-color: #2d2d2d;
+    border: 4px solid #ffffff;
+} 
+.deleteaccount:hover {
+    background-color: #a41b40;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 319px) {
+
+    .mastheadcontainer {
+        height: 18%;
+    }
+    .mastheadfidelity {
+        transform: scale(0.5);
+    }
+    .appcontainerborder {
+        width: 85%;
+    }
+    .titlecontainer {
+        width: 90%;
+        height: 52px;
+        font-size: 16px;
+        padding-top: 0px;
+    }
+    .titlecontainer1 {
+        height: 52px;
+        font-size: 16px;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .inputcontainer {
+        width: 90%;
+        border-top: 2px dotted #ffffff;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .subtitlecontainer {
+        height: 46px;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+    }
+    .retrivepassword {
+        height: 46px;
+        font-size: 9px;
+    }
+    .inputboxlogin {
+        width: 90%;
+        height: 32px;
+        font-size: 14px;
+    }
+    .marginbottom {
+        margin-bottom: 18px;
+    }
+    .buttoncontainer {
+        height: 72px;
+    }
+    .onebutton {
+        height: 36px;
+        width: 83%;
+        border: 2px solid #ffffff;
+        font-size: 16px;
+    }
+    .twobutton {
+        height: 36px;
+        width: 36%;
+        border: 2px solid #ffffff;
+        font-size: 16px;
+        margin: 6px;
+    }
+    .accountcontainer {
+        height: 38px;
+        border-left: 2px dotted #ffffff;
+    }
+    .usertitle {
+        font-size: 8px;
+        margin-top: 8px;
+    }
+    .useraddress {
+        height: 42px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .accounticon {
+        height: 24px;
+        width: 24px;
+    }
+    .statscontainer {
+        height: 69px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .statsbox {
+        width: 50%;
+        height: 100%;
+    }
+    .dividerline {
+        height: 57px;
+        border-left: 3px dotted #ffffff;
+    }
+    .statstitle {
+        font-size: 10px;
+    }
+    .statsvalue {
+        height: 46px;
+        font-size: 30px;
+    }
+    .cardidcontainer {
+        height: 71px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .searchbox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .inputbox {
+        height: 61px;
+        font-size: 30px;
+    }
+    .createbox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .inputnumbers {
+        font-size: 30px;
+    }
+    .plusminusbox {
+        height: 61px;
+    }
+    .buybox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .accountid {
+        font-size: 30px;
+    }
+    .creditstatuscontainer {
+        height: 138px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .clientstatusbox {
+        width: 80%;
+        height: 65px;
+    }
+    .clientstatusvaluebox {
+        height: 50px;
+    }
+    .clientstatusvalueiconup {
+        height: 25px;
+        width: 25px;
+    }
+    .clientstatusvalueicondown {
+        height: 25px;
+        width: 25px;
+    }
+    .clientstatusvalue {
+        font-size: 32px;
+    }
+    .clientscreditvaluestatic {
+        font-size: 13px;
+    }
+    .clientscreditvalue {
+        font-size: 13px;
+    }
+    .historycontainer {
+        height: 374px;
+    }
+    .historytitlebox {
+        height: 30px;
+    }
+    .dateboxtitle {
+        height: 18px;
+        font-size: 10px;
+    }
+    .cardidboxtitle {
+        height: 18px;
+        font-size: 10px;
+    }
+    .amountboxtitle {
+        font-size: 10px;
+    }
+    .historyvaluerow {
+        width: 96%;
+        height: 40px;
+    }
+    .datevalue {
+        height: 26px;
+        font-size: 13px;
+    }
+    .cardidvalue {
+        height: 26px;
+        font-size: 13px;
+    }
+    .valuestatusbox {
+        height: 18px;
+    }
+    .amountvalue {
+        font-size: 13px;
+    }
+    .amountstatusplus {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusnew {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusminus {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusbuy {
+        height: 16px;
+        width: 16px;
+    }
+    .inputboxaccount {
+        height: 36px;
+        font-size: 16px;
+        margin-bottom: 22px;
+    }    
+    .deleteaccount {
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 22px;
+        border: 3px solid #ffffff;
+    } 
+    
+    
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 386px) {
+
+    .mastheadcontainer {
+        height: 38%;
+    }
+    .mastheadfidelity {
+        transform: scale(0.65);
+    }
+    .appcontainerborder {
+        width: 91%;
+        margin-bottom: 0px;
+    }
+    .titlecontainer {
+        width: 90%;
+        height: 42px;
+        font-size: 15px;
+    }
+    .titlecontainer1 {
+        height: 42px;
+        font-size: 15px;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .inputcontainer {
+        width: 90%;
+        border-top: 2px dotted #ffffff;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .usercontainer1 {
+        width: 82%;
+    }
+    .subtitlecontainer {
+        height: 36px;
+        font-size: 13px;
+        letter-spacing: 0.6px;
+    }
+    .retrivepassword {
+        height: 36px;
+        font-size: 10px;
+    }
+    .inputboxlogin {
+        width: 90%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .marginbottom {
+        margin-bottom: 16px;
+    }
+    .buttoncontainer {
+        height: 68px;
+    }
+    .onebutton {
+        height: 36px;
+        width: 83%;
+        border: 2px solid #ffffff;
+        font-size: 14px;
+    }
+    .twobutton {
+        height: 36px;
+        width: 36%;
+        border: 2px solid #ffffff;
+        font-size: 14px;
+        margin: 8px;
+    }
+    .usercontainer {
+        width: 82%;
+    }
+    .accountcontainer {
+        height: 34px;
+        border-left: 2px dotted #ffffff;
+        width: 18%;
+    }
+    .usertitle {
+        font-size: 8px;
+        margin-top: 3px;
+    }
+    .useraddress {
+        height: 26px;
+        font-size: 11px;
+        line-height: 12px;
+    }
+    .accounticon {
+        height: 25px;
+        width: 25px;
+    }
+    .statscontainer {
+        height: 46px;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .statsbox {
+        width: 50%;
+        height: 100%;
+    }
+    .dividerline {
+        height: 34px;
+        border-left: 2px dotted #ffffff;
+    }
+    .statstitle {
+        font-size: 8px;
+        margin-top: 2px;
+    }
+    .statsvalue {
+        height: 24px;
+        font-size: 21px;
+    }
+    .cardidcontainer {
+        height: 51px;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .searchbox {
+        height: 45px;
+        font-size: 13px;
+    }
+    .inputbox {
+        height: 45px;
+        font-size: 16px;
+    }
+    .createbox {
+        height: 45px;
+        font-size: 13px;
+    }
+    .inputnumbers {
+        font-size: 21px;
+    }
+    .plusminusbox {
+        height: 45px;
+    }
+    .buybox {
+        height: 45px;
+        font-size: 13px;
+    }
+    .accountid {
+        font-size: 18px;
+    }
+    .creditstatuscontainer {
+        height: 98px;
+        border-bottom: 2px dotted #ffffff;
+    }
+    .clientstatusbox {
+        width: 80%;
+        height: 45px;
+    }
+    .clientstatusvaluebox {
+        height: 34px;
+    }
+    .clientstatusvalueiconup {
+        height: 20px;
+        width: 20px;
+    }
+    .clientstatusvalueicondown {
+        height: 20px;
+        width: 20px;
+    }
+    .clientstatusvalue {
+        font-size: 24px;
+    }
+    .clientscreditvaluestatic {
+        font-size: 11px;
+    }
+    .clientscreditvalue {
+        font-size: 11px;
+    }
+    .historycontainer {
+        height: 254px;
+    }
+    .historytitlebox {
+        height: 24px;
+    }
+    .dateboxtitle {
+        height: 14px;
+        font-size: 8px;
+    }
+    .cardidboxtitle {
+        height: 14px;
+        font-size: 8px;
+    }
+    .amountboxtitle {
+        font-size: 8px;
+    }
+    .historyvaluerow {
+        width: 96%;
+        height: 30px;
+    }
+    .datevalue {
+        height: 22px;
+        font-size: 11px;
+    }
+    .cardidvalue {
+        height: 22px;
+        font-size: 11px;
+    }
+    .valuestatusbox {
+        height: 14px;
+    }
+    .amountvalue {
+        font-size: 11px;
+    }
+    .amountstatusplus {
+        height: 13px;
+        width: 13px;
+    }
+    .amountstatusnew {
+        height: 13px;
+        width: 13px;
+    }
+    .amountstatusminus {
+        height: 13px;
+        width: 13px;
+    }
+    .amountstatusbuy {
+        height: 13px;
+        width: 13px;
+    }
+    .inputboxaccount {
+        height: 30px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }    
+    .deleteaccount {
+        height: 36px;
+        font-size: 14px;
+        margin-bottom: 16px;
+        border: 2px solid #ffffff;
+    } 
+    
+    
+}
+
+
+
+
+@media only screen and (min-width: 387px) and (max-width: 450px) {
+
+    .mastheadcontainer {
+        height: 24%;
+    }
+    .mastheadfidelity {
+        transform: scale(0.75);
+    }
+    .appcontainerborder {
+        width: 85%;
+    }
+    .titlecontainer {
+        width: 90%;
+        height: 62px;
+        font-size: 21px;
+    }
+    .titlecontainer1 {
+        height: 62px;
+        font-size: 21px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .inputcontainer {
+        width: 90%;
+        border-top: 3px dotted #ffffff;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .subtitlecontainer {
+        height: 52px;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+    }
+    .retrivepassword {
+        height: 52px;
+        font-size: 11px;
+    }
+    .inputboxlogin {
+        width: 90%;
+        height: 36px;
+        font-size: 16px;
+    }
+    .marginbottom {
+        margin-bottom: 22px;
+    }
+    .buttoncontainer {
+        height: 88px;
+    }
+    .onebutton {
+        height: 40px;
+        width: 83%;
+        border: 3px solid #ffffff;
+        font-size: 18px;
+    }
+    .twobutton {
+        height: 40px;
+        width: 36%;
+        border: 3px solid #ffffff;
+        font-size: 18px;
+    }
+    .accountcontainer {
+        height: 51px;
+        border-left: 3px dotted #ffffff;
+    }
+    .usertitle {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .useraddress {
+        height: 42px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .accounticon {
+        height: 34px;
+        width: 34px;
+    }
+    .statscontainer {
+        height: 69px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .statsbox {
+        width: 50%;
+        height: 100%;
+    }
+    .dividerline {
+        height: 57px;
+        border-left: 3px dotted #ffffff;
+    }
+    .statstitle {
+        font-size: 10px;
+    }
+    .statsvalue {
+        height: 46px;
+        font-size: 30px;
+    }
+    .cardidcontainer {
+        height: 71px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .searchbox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .inputbox {
+        height: 61px;
+        font-size: 30px;
+    }
+    .createbox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .inputnumbers {
+        font-size: 30px;
+    }
+    .plusminusbox {
+        height: 61px;
+    }
+    .buybox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .accountid {
+        font-size: 30px;
+    }
+    .creditstatuscontainer {
+        height: 138px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .clientstatusbox {
+        width: 80%;
+        height: 65px;
+    }
+    .clientstatusvaluebox {
+        height: 50px;
+    }
+    .clientstatusvalueiconup {
+        height: 25px;
+        width: 25px;
+    }
+    .clientstatusvalueicondown {
+        height: 25px;
+        width: 25px;
+    }
+    .clientstatusvalue {
+        font-size: 32px;
+    }
+    .clientscreditvaluestatic {
+        font-size: 13px;
+    }
+    .clientscreditvalue {
+        font-size: 13px;
+    }
+    .historycontainer {
+        height: 374px;
+    }
+    .historytitlebox {
+        height: 30px;
+    }
+    .dateboxtitle {
+        height: 18px;
+        font-size: 10px;
+    }
+    .cardidboxtitle {
+        height: 18px;
+        font-size: 10px;
+    }
+    .amountboxtitle {
+        font-size: 10px;
+    }
+    .historyvaluerow {
+        width: 96%;
+        height: 40px;
+    }
+    .datevalue {
+        height: 26px;
+        font-size: 13px;
+    }
+    .cardidvalue {
+        height: 26px;
+        font-size: 13px;
+    }
+    .valuestatusbox {
+        height: 18px;
+    }
+    .amountvalue {
+        font-size: 13px;
+    }
+    .amountstatusplus {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusnew {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusminus {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusbuy {
+        height: 16px;
+        width: 16px;
+    }
+    .inputboxaccount {
+        height: 36px;
+        font-size: 16px;
+        margin-bottom: 22px;
+    }    
+    .deleteaccount {
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 22px;
+        border: 3px solid #ffffff;
+    } 
+    
+    
+}
+
+
+
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+
+    .mastheadcontainer {
+        height: 28%;
+    }
+    .mastheadfidelity {
+        transform: scale(0.85);
+    }
+    .appcontainerborder {
+        width: 85%;
+    }
+    .titlecontainer {
+        width: 90%;
+        height: 62px;
+        font-size: 21px;
+    }
+    .titlecontainer1 {
+        height: 62px;
+        font-size: 21px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .inputcontainer {
+        width: 90%;
+        border-top: 3px dotted #ffffff;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .subtitlecontainer {
+        height: 52px;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+    }
+    .retrivepassword {
+        height: 52px;
+        font-size: 11px;
+    }
+    .inputboxlogin {
+        width: 90%;
+        height: 36px;
+        font-size: 16px;
+    }
+    .marginbottom {
+        margin-bottom: 22px;
+    }
+    .buttoncontainer {
+        height: 88px;
+    }
+    .onebutton {
+        height: 40px;
+        width: 83%;
+        border: 3px solid #ffffff;
+        font-size: 18px;
+    }
+    .twobutton {
+        height: 40px;
+        width: 36%;
+        border: 3px solid #ffffff;
+        font-size: 18px;
+    }
+    .accountcontainer {
+        height: 51px;
+        border-left: 3px dotted #ffffff;
+    }
+    .usertitle {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+    .useraddress {
+        height: 42px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .accounticon {
+        height: 34px;
+        width: 34px;
+    }
+    .statscontainer {
+        height: 69px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .statsbox {
+        width: 50%;
+        height: 100%;
+    }
+    .dividerline {
+        height: 57px;
+        border-left: 3px dotted #ffffff;
+    }
+    .statstitle {
+        font-size: 10px;
+    }
+    .statsvalue {
+        height: 46px;
+        font-size: 30px;
+    }
+    .cardidcontainer {
+        height: 71px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .searchbox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .inputbox {
+        height: 61px;
+        font-size: 30px;
+    }
+    .createbox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .inputnumbers {
+        font-size: 30px;
+    }
+    .plusminusbox {
+        height: 61px;
+    }
+    .buybox {
+        height: 61px;
+        font-size: 16px;
+    }
+    .accountid {
+        font-size: 30px;
+    }
+    .creditstatuscontainer {
+        height: 138px;
+        border-bottom: 3px dotted #ffffff;
+    }
+    .clientstatusbox {
+        width: 80%;
+        height: 65px;
+    }
+    .clientstatusvaluebox {
+        height: 50px;
+    }
+    .clientstatusvalueiconup {
+        height: 25px;
+        width: 25px;
+    }
+    .clientstatusvalueicondown {
+        height: 25px;
+        width: 25px;
+    }
+    .clientstatusvalue {
+        font-size: 32px;
+    }
+    .clientscreditvaluestatic {
+        font-size: 13px;
+    }
+    .clientscreditvalue {
+        font-size: 13px;
+    }
+    .historycontainer {
+        height: 374px;
+    }
+    .historytitlebox {
+        height: 30px;
+    }
+    .dateboxtitle {
+        height: 18px;
+        font-size: 10px;
+    }
+    .cardidboxtitle {
+        height: 18px;
+        font-size: 10px;
+    }
+    .amountboxtitle {
+        font-size: 10px;
+    }
+    .historyvaluerow {
+        width: 96%;
+        height: 40px;
+    }
+    .datevalue {
+        height: 26px;
+        font-size: 13px;
+    }
+    .cardidvalue {
+        height: 26px;
+        font-size: 13px;
+    }
+    .valuestatusbox {
+        height: 18px;
+    }
+    .amountvalue {
+        font-size: 13px;
+    }
+    .amountstatusplus {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusnew {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusminus {
+        height: 16px;
+        width: 16px;
+    }
+    .amountstatusbuy {
+        height: 16px;
+        width: 16px;
+    }
+    .inputboxaccount {
+        height: 36px;
+        font-size: 16px;
+        margin-bottom: 22px;
+    }    
+    .deleteaccount {
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 22px;
+        border: 3px solid #ffffff;
+    } 
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

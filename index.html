@@ -1,0 +1,397 @@
+<!doctype html>
+
+<html lang="it">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="mycredits.css" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="mycredits.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
+
+<style type="text/css">
+    @import url("fonts/TradeGothic/stylesheet.css");
+    @import url("fonts/TradeGothic/stylesheet.css");
+    @import url("fonts/BoucherieBlock/BoucherieBlock-Bold.ttf");
+    @import url("fonts/BoucherieBlock/BoucherieBlock-BoldItalic.ttf");
+    @import url("fonts/BoucherieBlock/BoucherieBlock-Italic.ttf");
+    @import url("fonts/BoucherieBlock/BoucherieBlock.ttf");
+    @import url("fonts/BotonMedItalic/stylesheet.css");
+    @import url("fonts/BotonBold/stylesheet.css");
+    @import url("fonts/BotonBoldItalic/stylesheet.css");
+    @import url("fonts/BotonItalic/stylesheet.css");
+    @import url("fonts/BotonMedium/stylesheet.css");
+    @import url("fonts/BotonRegular/stylesheet.css");
+    @import url("fonts/TradeGothic/stylesheet.css");
+</style>
+    
+    
+</head>
+
+
+<body>
+
+    <div id="fidelity" class="fidelitycontainer">
+        
+        <div class="mastheadcontainer">
+            <img src="images/masthead.png" class="mastheadfidelity">
+        </div>
+        
+        <!--    fidelity login window    -->
+        
+        <div id="fidelitylogin" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">Welcome to Fidelity Credits</div>
+                <div class="inputcontainer">
+                    <div class="subtitlecontainer">Enter to manage credits!</div>
+                    <input id="user" type="text" class="inputboxlogin marginbottom" placeholder="Username">
+                    <input id="pwd" type="password" class="inputboxlogin" placeholder="Password">
+                    <div id="forgotpass" class="retrivepassword">forgot  your password?</div>
+                </div>
+                <div class="buttoncontainer">
+                    <div id="btn-login" class="onebutton">enter</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--    fidelity retrieve password window    -->
+        
+        <div id="fidelityretrievepassword" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">retrieve your password!</div>
+                <div class="inputcontainer">
+                    <div class="subtitlecontainer">Enter your e-mail!</div>
+                    <input id="password-send-email" type="text" class="inputboxlogin marginbottom" placeholder="e-mail address">
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton show-login">back</div>
+                    <div class="twobutton green send">send</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--    fidelity administrator home    -->
+        
+        <div id="fidelityadminhome" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="usercontainer">
+                        <div class="usertitle">administrator</div>
+                        <div class="useraddress">sgorup@suppigorup.com</div>
+                    </div>
+                    <div class="accountcontainer">
+                        <div id="btn-admin-account" class="accounticon"></div>
+                    </div>
+                </div>
+                <div class="inputcontainer">
+                    <div class="statscontainer">
+                        <div class="statsbox">
+                            <div class="statstitle">total cards</div>
+                            <div id="admin-cnt-cards" class="statsvalue">258</div>
+                        </div>
+                        <div class="dividerline"></div>
+                        <div class="statsbox">
+                            <div class="statstitle">total credit</div>
+                            <div id="admin-tot-credits" class="statsvalue">1248</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cardidcontainer">
+                        <div class="searchbox">search</div>
+                        <div class="inputbox">
+                            <input id="cards_search_filter" type="tel" class="inputnumbers" placeholder="#" maxlength="4">
+                        </div>
+                        <div id="btn-create-card" class="createbox">create</div>
+                    </div>
+                    
+                    <div class="historytitlebox">
+                        <div class="dateboxtitle">date</div>
+                        <div class="cardidboxtitle">card id</div>
+                        <div class="amountboxtitle">amount</div>
+                    </div>
+                    
+                    <div class="historycontainer">
+                        <div class="historyvaluerow">
+                            <div class="datevalue">24/6/2020, 14:15</div>
+                            <div class="cardidvalue">265</div>
+                            <div class="amountvaluebox">
+                                <div class="valuestatusbox">
+                                    <div class="amountstatusplus" hidden></div>
+                                    <div class="amountstatusminus"></div>
+                                    <div class="amountstatusbuy"hidden></div>
+                                </div>
+                                <div class="amountvalue">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttoncontainer">
+                    <div class="onebutton show-login">exit</div>
+                </div>
+            </div>  
+        </div>
+        
+
+        <!--    fidelity administrator client status(transactions)    -->
+        
+        <div id="fidelityadminclient" class="appcontainerborder" >
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="usercontainer">
+                        <div class="usertitle">client e-mail</div>
+                        <div class="useraddress">sgorup@suppigorup.com</div>
+                    </div>
+                    <div class="accountcontainer">
+                        <div id="btn-show-client-account" class="accounticon show-client"></div>
+                    </div>
+                </div>
+                
+                <div class="inputcontainer">
+                    
+                    <div class="titlecontainer1">
+                        <div class="usercontainer1">
+                            <div class="usertitle">client name and card id</div>
+                            <div class="useraddress capitalize">sasha gorup</div>
+                        </div>
+                        <div class="accountcontainer">
+                            <div class="accountid">215</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cardidcontainer">
+                        
+                        <div class="plusminusbox">
+                            <div id="minus" class="minusbutton"></div>
+                            <div id="plus" class="plusbutton"></div>
+                        </div>
+                        
+                        <div class="inputbox">
+                            <input id="credit-amount" type="number" class="inputnumbers" placeholder="#">
+                        </div>
+                        <div class="buybox">buy</div>
+                    </div>
+                    
+                    <div class="historytitlebox">
+                        <div class="dateboxtitle">date</div>
+                        <div class="cardidboxtitle">card id</div>
+                        <div class="amountboxtitle">amount</div>
+                    </div>
+                    
+                    <div class="historycontainer">
+                        <div class="historyvaluerow">
+                            <div class="datevalue">24/6/2020, 14:15</div>
+                            <div class="valuestatusbox">
+                                <div class="amountstatusplus" hidden></div>
+                                <div class="amountstatusminus"></div>
+                                <div class="amountstatusbuy"hidden></div>
+                            </div>
+                            <div class="amountvaluebox">
+                                <div class="amountvalue">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton show-admin-home">back</div>
+                    <div class="twobutton green save">save</div>
+                </div>
+            </div>  
+        </div>
+        
+        <!--    fidelity client status    -->
+        
+        <div id="fidelityclient" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="usercontainer">
+                        <div class="usertitle">client e-mail</div>
+                        <div class="useraddress"></div>
+                    </div>
+                    <div class="accountcontainer">
+                        <div id="btn-client-edit-account" class="accounticon"></div>
+                    </div>
+                </div>
+                
+                <div class="inputcontainer">
+                    
+                    <div class="creditstatuscontainer">
+                        
+                        <div class="subtitlecontainer">Your current credit status:</div>
+                        
+                        <div class="clientstatusbox">
+                            <div class="clientstatusvaluebox borderright">
+                                <div class="clientstatusvalueiconup" style="display: none;"></div>
+                                <div class="clientstatusvalueicondown" style="display: none;"></div>
+                                <div class="clientstatusvalue">150</div>
+                            </div>
+                            <div class="clientstatusvaluebox">
+                                <div class="clientscreditvaluestatic">1 credit =</div>
+                                <div class="clientscreditvalue">1 euro</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="historytitlebox">
+                        <div class="dateboxtitle">date</div>
+                        <div class="cardidboxtitle">card id</div>
+                        <div class="amountboxtitle">amount</div>
+                    </div>
+                    
+                    <div class="historycontainer">
+                        <div class="historyvaluerow">
+                            <div class="datevalue">24/6/2020, 14:15</div>
+                            <div class="cardidvalue">265</div>
+                            <div class="amountvaluebox">
+                                <div class="valuestatusbox">
+                                    <div class="amountstatusplus" hidden></div>
+                                    <div class="amountstatusminus"></div>
+                                    <div class="amountstatusbuy"hidden></div>
+                                </div>
+                                <div class="amountvalue">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton show-login">exit</div>
+                    <div class="twobutton green">buy</div>
+                </div>
+            </div>  
+        </div>
+        
+        <!--    fidelity admin account window    -->
+        
+        <div id="fidelityadminaccount" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="usercontainer">
+                        <div class="usertitle">administrator account</div>
+                        <div class="useraddress"></div>
+                    </div>
+                    <div class="accountcontainer">
+                        <div class="accounticon show-admin-home"></div>
+                    </div>
+                </div>
+                <div class="inputcontainer">
+                    <div class="subtitlecontainer">Edit account and save it!</div>
+                    <input id="admin-account-email" type="text" class="inputboxaccount">
+                    <input id="admin-account-username" type="text" class="inputboxaccount capitalize">
+                    <input id="admin-account-password" type="password" class="inputboxaccount">
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton show-admin-home">back</div>
+                    <div class="twobutton green save">save</div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--    fidelity client account window    -->        
+
+        <div id="fidelityclientaccount" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="usercontainer">
+                        <div class="usertitle">client account</div>
+                        <div class="useraddress">sgorup@suppigorup.com</div>
+                    </div>
+                    <div class="accountcontainer">
+                        <div class="accounticon show-client"></div>
+                    </div>
+                </div>
+                <div class="inputcontainer">
+                    <div class="subtitlecontainer">Edit account and save it!</div>
+                    <input id="client-account-email" type="text" class="inputboxaccount">
+                    <input id="client-account-name" type="text" class="inputboxaccount capitalize">
+                    <input id="client-account-password" type="password" class="inputboxaccount">
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton back">back</div>
+                    <div class="twobutton green save">save</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--    fidelity admin for client account window    -->
+        
+        <div id="fidelityadminclientaccount" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="usercontainer">
+                        <div class="usertitle">client account</div>
+                        <div class="useraddress">sgorup@suppigorup.com</div>
+                    </div>
+                    <div class="accountcontainer">
+                        <div class="accounticon show-client"></div>
+                    </div>
+                </div>
+                <div class="inputcontainer">
+                    <div class="subtitlecontainer">Edit account and save it!</div>
+                    <input id="admin-client-account-email" type="text" class="inputboxaccount">
+                    <input id="admin-client-account-name" type="text" class="inputboxaccount capitalize">
+                    <div class="deleteaccount">delete</div>
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton show-client">back</div>
+                    <div id="admin-client-account-save" class="twobutton green">save</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--    fidelity admin for create new card window    -->
+
+        <div id="fidelityadmincreatecard" class="appcontainerborder" hidden>
+            <div class="appcontainer">
+                <div class="titlecontainer">
+                    <div class="titlestyle">create new card</div>
+                </div>
+                <div class="inputcontainer">
+                    <div class="subtitlecontainer">Input required info and press create card!</div>
+                    <input id="admin-clientemail" type="text" class="inputboxaccount" placeholder="Client E-mail Address">
+                    <input id="admin-clientname" type="text" class="inputboxaccount capitalize" placeholder="Client Full Name">
+                </div>
+                <div class="buttoncontainer">
+                    <div class="twobutton" id="btn-back-client-home">back</div>
+                    <div id="btn-admin-create-card" class="twobutton green">create</div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <Modal Header >
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</body>
